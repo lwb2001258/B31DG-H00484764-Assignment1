@@ -32,10 +32,10 @@ To set up and run the Arduino IDE for the ESP32-WROOM-32, follow these steps:
 ## 6. Upload Code
 - Open the code file B31_DG_assignment.ino
 - Setup the ESP32-Wroom-32 board by the circuit image
-  ![image](https://github.com/lwb2001258/B31DG-H00484764-Assignment1/blob/main/Screenshot%202025-02-16%20203304.png)
+  ![image](https://github.com/lwb2001258/B31DG-H00484764-Assignment1/blob/main/circuit_image.png)
 - Click the "Upload" button (right arrow icon) to compile and upload the code to the ESP32.
 - The flowchart of the application is shown in the following images
-   ![image](https://github.com/lwb2001258/B31DG-H00484764-Assignment1/blob/main/Screenshot%202025-02-16%20223630.png)
+   ![image](https://github.com/lwb2001258/B31DG-H00484764-Assignment1/blob/main/flowchart.png)
 
 ## 7. Monitor Serial Output
 - After uploading the code, open the Serial Monitor by going to `Tools` > `Serial Monitor`.
