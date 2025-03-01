@@ -43,3 +43,52 @@ To set up and run the Arduino IDE for the ESP32-WROOM-32, follow these steps:
 - You should see the output from your ESP32 in the Serial Monitor.
 
 By following these steps, you can successfully set up and run the Arduino IDE for the ESP32-WROOM-32, allowing you to develop and upload code to this powerful microcontroller.
+
+
+# Detailed Introduction to Setting Up and Running VSCode with ESP-IDF for the ESP32-WROOM-32
+
+To set up and run VSCode with ESP-IDF for the ESP32-WROOM-32, follow these steps:
+
+## 1. Install Prerequisites
+- **VSCode**: Download and install [Visual Studio Code](https://code.visualstudio.com/).
+- **ESP-IDF**: Install the ESP-IDF framework by following the official [ESP-IDF setup guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html).
+
+## 2. Install ESP-IDF Extension in VSCode
+- Open VSCode.
+- Go to the Extensions Marketplace by clicking the Extensions icon in the Activity Bar or pressing `Ctrl+Shift+X`.
+- Search for "ESP-IDF" and install the official ESP-IDF extension by Espressif Systems.
+
+## 3. Configure ESP-IDF in VSCode
+- After installing the ESP-IDF extension, open the Command Palette by pressing `Ctrl+Shift+P`.
+- Search for and select `ESP-IDF: Configure ESP-IDF extension`.
+- Follow the on-screen instructions to set up the ESP-IDF tools. You can choose to download and install the required tools automatically or manually configure an existing ESP-IDF installation.
+
+## 4. Set Up the ESP32-WROOM-32 Board
+- Open the Command Palette again (`Ctrl+Shift+P`).
+- Search for and select `ESP-IDF: Set Espressif device target`.
+- Choose `ESP32` as the target chip.
+
+## 5. Create or Open a Project
+- To create a new project, use the Command Palette and select `ESP-IDF: Create new project`.
+- To open an existing project, use `File` > `Open Folder` and select the project directory.
+
+## 6. Configure Project Settings
+- Open the `CMakeLists.txt` file in the root of your project to configure build settings.
+- Ensure the `set(ESP_PLATFORM 1)` line is present and correctly configured for the ESP32-WROOM-32.
+
+## 7. Build the Project
+- Open the Command Palette and select `ESP-IDF: Build your project`.
+- The extension will compile your project using the ESP-IDF toolchain.
+
+## 8. Flash the Firmware
+- Connect your ESP32-WROOM-32 to your computer via USB.
+- Open the Command Palette and select `ESP-IDF: Select port to use`.
+- Choose the appropriate serial port for your device.
+- To flash the firmware, use the Command Palette and select `ESP-IDF: Flash your project`.
+
+## 9. Monitor Serial Output
+- Open the Command Palette and select `ESP-IDF: Open the serial monitor`.
+- Set the baud rate to match your project configuration (commonly 115200).
+- You should see the output from your ESP32-WROOM-32 in the serial monitor.
+
+By following these steps, you can successfully set up and run VSCode with ESP-IDF for the ESP32-WROOM-32, enabling efficient development, and firmware flashing for your projects.
