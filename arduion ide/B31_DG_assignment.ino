@@ -36,7 +36,7 @@
 // define the led pin for the select signal
 #define SELECT_LED_PIN 26
 // define the debounce time in millisecond for the enable button and select button
-#define DEBOUNCE_DELAY 
+#define DEBOUNCE_DELAY 100
 
 //set the starting state of the enable signal to be true
 volatile bool enable_state = true;
