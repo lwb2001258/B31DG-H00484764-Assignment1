@@ -42,7 +42,7 @@
 #define ENABLE_LED_PIN 27
 #define SELECT_LED_PIN 26
 // Debounce delay in milliseconds
-#define DEBOUNCE_DELAY 50  
+#define DEBOUNCE_DELAY 100  
 
 //set the logging tag
 static const char *TAG = "MAIN";
